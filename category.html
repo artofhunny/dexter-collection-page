@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Multiple blog page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="category.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- <link rel="stylesheet" href="multiple-blog.css">
+    <link rel="stylesheet" href="multiple-blog-content.css"> -->
     
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
@@ -27,25 +31,25 @@
                     <input type="text" placeholder="Search Apps and Games" id="">
                 </div>
                 <ul>
-                    <li class="home-tab">
+                    <li class="home-tab cursor-pointer">
                         <img src="images/Vector.png" alt="">
                         <p>Home</p>
                     </li>
-                    <li>
-                        <img src="images/Vector.png" alt="">
-                        <p>Home</p>
+                    <li class="cursor-pointer">
+                        <img src="images/category-meu-logo.png" alt="">
+                        <p>Category</p>
                     </li>
-                    <li>
-                        <img src="images/Vector.png" alt="">
-                        <p>Recently played</p>
+                    <li class="cursor-pointer">
+                        <img src="images/menu-message-logo.png" alt="">
+                        <p>Message</p>
                     </li>
-                    <li>
-                        <img src="images/Vector.png" alt="">
-                        <p>Home</p>
+                    <li class="cursor-pointer">
+                        <img src="images/menu-recent-played-logo.png" alt="">
+                        <p>Recently Played</p>
                     </li>
-                    <li>
-                        <img src="images/Vector.png" alt="">
-                        <p>Home</p>
+                    <li class="cursor-pointer">
+                        <img src="images/menu-ac-logo.png" alt="">
+                        <p>Account</p>
                     </li>
                     <div class="line"></div>
                 </ul>
@@ -61,7 +65,7 @@
                     <li>Contact</li>
                 </ul>
                 <div class="btns">
-                    <img src="images/contrast-logo.png" alt="contrast-logo">
+                    <img src="images/contrast-logo.png" class="contrast-logo" alt="contrast-logo">
                     <button class="sign-in-btn">Sign In</button>
                     <button class="sign-up-btn">Sign Up</button>
                     <div class="menu-logo">
@@ -73,7 +77,9 @@
                     </div>
                 </div>
             </nav>
-            <div class="category-content">
+
+           <div class="category-content flex flex-col gap-4">
+
                 <h1 class="category-heading">
                     DeFi Category
                 </h1>
@@ -94,27 +100,25 @@
                     </div>
                 </div>
 
-                <!-- LAYOUT 1 -->
                 <div class="layout-1">
-                    <div class="rybbon" style="">
+                    
+                    <div class="flex flex-wra lg:flex-nowrap bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl items-center gap-4 border-[#18567F]" style="">
                         <!-- <div class="img-text"> -->
                             <img src="images/category-1.png" class="rybn-img" alt="">
                             <div class="rybn-box">
-                                <div class="rybn-title-box">
+                                <div class="flex justify-between">
                                     <p class="title">1Inch</p>
                                      <div class="ryn-label-tags">
-                                        <label class="dexter-varified">DEXTR Verified</label>
-                                        <label class="ppl-visited">400 People Visited</label>
-                                        <label class="nft-pool">NFT Pool</label>
+                                        <label class="trending">Trending</label>
                                     </div>
                                 </div>
-                                <div class="rybbon-item-data">
+                                <div class="">
                                     <div>
                                         <p class="card-text">
-                                            Sidus Heroes is a pioneering, Web3, space-based gaming metaverse with epic lore
+                                            Sidus Heroes is a pioneering, Web3, space-based gaming.
                                         </p>
-                                        <p class="defi-wallet">DEFI • WALLET</p>
-                                        <div class="rating">
+                                        <p class="defi-wallet mt-3">DEFI • WALLET</p>
+                                        <div class="rating lg:flex-nowra flex-wrap"> 
                                             <div class="stars flex">
                                                 <img src="images/star-logo.png" alt="">
                                                 <img src="images/star-logo.png" alt="">
@@ -122,36 +126,34 @@
                                                 <img src="images/star-logo.png" alt="">
                                                 <img src="images/empty-star.png" alt="">
                                             </div>
-                                            <p>. 4.8 Ratings | 369 Reviews</p>
+                                            <p style="font-size: 14px;">. 4.8 Ratings | 369 Reviews</p>
                                         </div>
                                     </div>
-                                    <div class="flex-col">
-                                        <button class="first-btn">Explore</button>
+                                    <div class="mt-2">
+                                        <button class="first-btn mb-2">Explore</button>
                                         <button class="scnd-btn">VISIT SITE</button>
                                     </div>
                                 </div>
                             </div>
                     </div>
 
-                    <div class="rybbon">
+                    <div class="flex flex-wra lg:flex-nowrap bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl items-center gap-4 border-[#18567F]" style="">
                         <!-- <div class="img-text"> -->
                             <img src="images/category-1.png" class="rybn-img" alt="">
                             <div class="rybn-box">
-                                <div class="rybn-title-box">
+                                <div class="flex justify-between">
                                     <p class="title">1Inch</p>
                                      <div class="ryn-label-tags">
-                                        <label class="dexter-varified">DEXTR Verified</label>
-                                        <label class="ppl-visited">400 People Visited</label>
-                                        <label class="nft-pool">NFT Pool</label>
+                                        <label class="trending">Trending</label>
                                     </div>
                                 </div>
-                                <div class="rybbon-item-data">
+                                <div class="">
                                     <div>
                                         <p class="card-text">
-                                            Sidus Heroes is a pioneering, Web3, space-based gaming metaverse with epic lore
+                                            Sidus Heroes is a pioneering, Web3, space-based gaming.
                                         </p>
-                                        <p class="defi-wallet">DEFI • WALLET</p>
-                                        <div class="rating">
+                                        <p class="defi-wallet mt-3">DEFI • WALLET</p>
+                                        <div class="rating lg:flex-nowra flex-wrap"> 
                                             <div class="stars flex">
                                                 <img src="images/star-logo.png" alt="">
                                                 <img src="images/star-logo.png" alt="">
@@ -159,48 +161,48 @@
                                                 <img src="images/star-logo.png" alt="">
                                                 <img src="images/empty-star.png" alt="">
                                             </div>
-                                            <p>. 4.8 Ratings | 369 Reviews</p>
+                                            <p style="font-size: 14px;">. 4.8 Ratings | 369 Reviews</p>
                                         </div>
                                     </div>
-                                    <div class="flex-col">
-                                        <button class="first-btn">Explore</button>
+                                    <div class="mt-2">
+                                        <button class="first-btn mb-2">Explore</button>
                                         <button class="scnd-btn">VISIT SITE</button>
                                     </div>
                                 </div>
                             </div>
                     </div>
 
-                    <div class="rybbon">
-                        <img src="images/category-1.png" class="rybn-img" alt="">
-                        <div class="rybn-box">
-                            <div class="rybn-title-box">
-                                <p class="title">1Inch</p>
-                                    <div class="ryn-label-tags">
-                                    <label class="dexter-varified">DEXTR Verified</label>
-                                    <label class="ppl-visited">400 People Visited</label>
-                                    <label class="nft-pool">NFT Pool</label>
-                                </div>
-                            </div>
-                            <div class="rybbon-item-data">
-                                <div>
-                                    <p class="card-text">
-                                        Sidus Heroes is a pioneering, Web3, space-based gaming metaverse with epic lore
-                                    </p>
-                                    <p class="defi-wallet">DEFI • WALLET</p>
-                                    <div class="rating">
-                                        <div class="stars flex">
-                                            <img src="images/star-logo.png" alt="">
-                                            <img src="images/star-logo.png" alt="">
-                                            <img src="images/star-logo.png" alt="">
-                                            <img src="images/star-logo.png" alt="">
-                                            <img src="images/empty-star.png" alt="">
-                                        </div>
-                                        <p>. 4.8 Ratings | 369 Reviews</p>
+                    <div class="flex flex-wra lg:flex-nowrap bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl items-center gap-4 border-[#18567F]" style="">
+                        <!-- <div class="img-text"> -->
+                            <img src="images/category-1.png" class="rybn-img" alt="">
+                            <div class="rybn-box">
+                                <div class="flex justify-between">
+                                    <p class="title">1Inch</p>
+                                     <div class="ryn-label-tags">
+                                        <label class="trending">Trending</label>
                                     </div>
                                 </div>
-                                <div class="flex-col">
-                                    <button class="first-btn">Explore</button>
-                                    <button class="scnd-btn">VISIT SITE</button>
+                                <div class="">
+                                    <div>
+                                        <p class="card-text">
+                                            Sidus Heroes is a pioneering, Web3, space-based gaming.
+                                        </p>
+                                        <p class="defi-wallet mt-3">DEFI • WALLET</p>
+                                        <div class="rating lg:flex-nowra flex-wrap"> 
+                                            <div class="stars flex">
+                                                <img src="images/star-logo.png" alt="">
+                                                <img src="images/star-logo.png" alt="">
+                                                <img src="images/star-logo.png" alt="">
+                                                <img src="images/star-logo.png" alt="">
+                                                <img src="images/empty-star.png" alt="">
+                                            </div>
+                                            <p style="font-size: 14px;">. 4.8 Ratings | 369 Reviews</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <button class="first-btn mb-2">Explore</button>
+                                        <button class="scnd-btn">VISIT SITE</button>
+                                    </div>
                                 </div>
                             </div>
                     </div>
@@ -208,15 +210,15 @@
                 </div>
 
 
-                <!-- LAYOUT 1 -->
+                <!-- Layout 2 -->
 
-                <div class="layout-2">
-                    <div class="half-container">
-                        <div class="rybbon ly-2-box" style="background-color: green; width: 100%;">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- <div class="half-container"> -->
+                        <div class="flex flex-wra lg:flex-nowrap bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl items-center gap-4 border-[#18567F]" style="">
                             <!-- <div class="img-text"> -->
                                 <img src="images/category-1.png" class="rybn-img" alt="">
                                 <div class="rybn-box">
-                                    <div class="rybn-title-box">
+                                    <div class="flex justify-between">
                                         <p class="title">1Inch</p>
                                          <div class="ryn-label-tags">
                                             <label class="trending">Trending</label>
@@ -227,8 +229,8 @@
                                             <p class="card-text">
                                                 Sidus Heroes is a pioneering, Web3, space-based gaming.
                                             </p>
-                                            <p class="defi-wallet">DEFI • WALLET</p>
-                                            <div class="rating"> 
+                                            <p class="defi-wallet mt-3">DEFI • WALLET</p>
+                                            <div class="rating lg:flex-nowra flex-wrap"> 
                                                 <div class="stars flex">
                                                     <img src="images/star-logo.png" alt="">
                                                     <img src="images/star-logo.png" alt="">
@@ -239,18 +241,18 @@
                                                 <p style="font-size: 14px;">. 4.8 Ratings | 369 Reviews</p>
                                             </div>
                                         </div>
-                                        <div class="">
-                                            <button class="first-btn">Explore</button>
+                                        <div class="mt-2">
+                                            <button class="first-btn mb-2">Explore</button>
                                             <button class="scnd-btn">VISIT SITE</button>
                                         </div>
                                     </div>
                                 </div>
                         </div>
-                        <div class="rybbon ly-2-box" style="background-color: green; width: 100%;">
+                        <div class="flex flex-wra lg:flex-nowrap bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl items-center gap-4 border-[#18567F]" style="">
                             <!-- <div class="img-text"> -->
                                 <img src="images/category-1.png" class="rybn-img" alt="">
                                 <div class="rybn-box">
-                                    <div class="rybn-title-box">
+                                    <div class="flex justify-between">
                                         <p class="title">1Inch</p>
                                          <div class="ryn-label-tags">
                                             <label class="trending">Trending</label>
@@ -261,8 +263,8 @@
                                             <p class="card-text">
                                                 Sidus Heroes is a pioneering, Web3, space-based gaming.
                                             </p>
-                                            <p class="defi-wallet">DEFI • WALLET</p>
-                                            <div class="rating">
+                                            <p class="defi-wallet mt-3">DEFI • WALLET</p>
+                                            <div class="rating lg:flex-nowra flex-wrap"> 
                                                 <div class="stars flex">
                                                     <img src="images/star-logo.png" alt="">
                                                     <img src="images/star-logo.png" alt="">
@@ -273,23 +275,23 @@
                                                 <p style="font-size: 14px;">. 4.8 Ratings | 369 Reviews</p>
                                             </div>
                                         </div>
-                                        <div class="">
-                                            <button class="first-btn">Explore</button>
+                                        <div class="mt-2">
+                                            <button class="first-btn mb-2">Explore</button>
                                             <button class="scnd-btn">VISIT SITE</button>
                                         </div>
                                     </div>
                                 </div>
                         </div>
-                    </div>
-                    <div class="half-container">
-                        <div class="rybbon ly-2-box">
+                    <!-- </div> -->
+                    <!-- <div class="half-container"> -->
+                        <div class="flex flex-wra lg:flex-nowrap bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl items-center gap-4 border-[#18567F]" style="">
                             <!-- <div class="img-text"> -->
                                 <img src="images/category-1.png" class="rybn-img" alt="">
                                 <div class="rybn-box">
-                                    <div class="rybn-title-box">
+                                    <div class="flex justify-between">
                                         <p class="title">1Inch</p>
                                          <div class="ryn-label-tags">
-                                            <label class="top-search"><img src="" alt=""> Top Search</label>
+                                            <label class="trending">Trending</label>
                                         </div>
                                     </div>
                                     <div class="">
@@ -297,8 +299,8 @@
                                             <p class="card-text">
                                                 Sidus Heroes is a pioneering, Web3, space-based gaming.
                                             </p>
-                                            <p class="defi-wallet">DEFI • WALLET</p>
-                                            <div class="rating">
+                                            <p class="defi-wallet mt-3">DEFI • WALLET</p>
+                                            <div class="rating lg:flex-nowra flex-wrap"> 
                                                 <div class="stars flex">
                                                     <img src="images/star-logo.png" alt="">
                                                     <img src="images/star-logo.png" alt="">
@@ -309,21 +311,21 @@
                                                 <p style="font-size: 14px;">. 4.8 Ratings | 369 Reviews</p>
                                             </div>
                                         </div>
-                                        <div class="">
-                                            <button class="first-btn">Explore</button>
+                                        <div class="mt-2">
+                                            <button class="first-btn mb-2">Explore</button>
                                             <button class="scnd-btn">VISIT SITE</button>
                                         </div>
                                     </div>
                                 </div>
                         </div>
-                        <div class="rybbon ly-2-box">
+                        <div class="flex flex-wra lg:flex-nowrap bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl items-center gap-4 border-[#18567F]" style="">
                             <!-- <div class="img-text"> -->
                                 <img src="images/category-1.png" class="rybn-img" alt="">
                                 <div class="rybn-box">
-                                    <div class="rybn-title-box">
+                                    <div class="flex justify-between">
                                         <p class="title">1Inch</p>
                                          <div class="ryn-label-tags">
-                                            <label class="top-search" ><img alt=""> Top Search</label>
+                                            <label class="trending">Trending</label>
                                         </div>
                                     </div>
                                     <div class="">
@@ -331,8 +333,8 @@
                                             <p class="card-text">
                                                 Sidus Heroes is a pioneering, Web3, space-based gaming.
                                             </p>
-                                            <p class="defi-wallet">DEFI • WALLET</p>
-                                            <div class="rating">
+                                            <p class="defi-wallet mt-3">DEFI • WALLET</p>
+                                            <div class="rating lg:flex-nowra flex-wrap"> 
                                                 <div class="stars flex">
                                                     <img src="images/star-logo.png" alt="">
                                                     <img src="images/star-logo.png" alt="">
@@ -343,23 +345,25 @@
                                                 <p style="font-size: 14px;">. 4.8 Ratings | 369 Reviews</p>
                                             </div>
                                         </div>
-                                        <div class="">
-                                            <button class="first-btn">Explore</button>
+                                        <div class="mt-2">
+                                            <button class="first-btn mb-2">Explore</button>
                                             <button class="scnd-btn">VISIT SITE</button>
                                         </div>
                                     </div>
                                 </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
-                  
+
+
                 <!-- LAYOUT 3 -->
 
-                <div class="layout-3">
-                    <div class="aave-box">
-                        <img src="images/aave.png" class="main-game-img w-[330px] h-[180px]" alt="">
-                        <div class="layer-3-game-content">
-                            <div class="rybn-title-box">
+                <div class="grid grid-cols-1 md:grid-cols-[379px_1fr] gap-6 ly-3-grid">
+
+                    <div class="w-full md:w-[379px] md:h-auto  bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]">
+                        <img src="images/aave.png" class="w-full " alt="">
+                        <div class="">
+                            <div class="flex justify-between">
                                 <p class="title">1Inch</p>
                                 <div class="ryn-label-tags">
                                     <label class="ppl-visited">400 People Visited</label>
@@ -367,10 +371,10 @@
                                 </div>
                             </div>
                             <div>
+                                <p class="defi-wallet" style="font-weight: normal; font-size: 14px;">DEFI • WALLET</p>
                                 <p class="" style="color: white; font-size: 10px;">
                                     Open-source non-custodial liquidity protocol..
                                 </p>
-                                <p class="defi-wallet" style="font-weight: normal; font-size: 14px;">DEFI • WALLET</p>
                                 <div class="rating">
                                     <div class="stars flex">
                                         <img src="images/star-logo.png" style="width: 16px;" alt="">
@@ -382,19 +386,19 @@
                                     <p style="font-size: 11px;">. 4.8 Ratings | 369 Reviews</p>
                                 </div>
                             </div>
-                            <div class="game-varified-tags">
-                                <div>
+                            <div class="">
+                                <div class="flex items-center gap-2">
                                     <img src="images/verified.png" alt="">
-                                    <span>Verified App</span>
+                                    <span class="text-[9px] text-white">Verified App</span>
                                 </div>
-                                <div>
+                                <div class="flex items-center gap-2">
                                     <img src="images/verified_user.png" alt="">
-                                    <span>Trusted App</span>
+                                    <span class="text-[9px] text-white">Trusted App</span>
                                 </div>
                             </div>
-                            <div class="explore-btns">
-                                <button>Explore</button>
-                                <div>
+                            <div class="flex justify-between items-center">
+                                <button class="bg-[#7FFDFD]" style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
+                                <div class="text-[7px]">
                                     <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
                                     <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
                                 </div>
@@ -402,12 +406,12 @@
                         </div>
                     </div>
 
-                    <div class="layer-3-aside">
-                        <div class="lyr-3-align">
-                            <div class="aave-box" style="display: flex; gap: 10px; padding: 10px; align-items: center">
+                    <div class=" flex flex-col justify-between">
+                        <div class="flex gap-3 grid-side-wrap">
+                            <div class="w-full bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]" style="display: flex; gap: 10px; padding: 10px; align-items: center">
                                 <img src="images/sidus-heros.png" class="gme-img-1" alt="">
-                                <div class="layer-3-game-content">
-                                    <div class="rybn-title-box">
+                                <div class=" w-full">
+                                    <div class="">
                                         <p class="title" style="font-size: 16px;">1Inch</p>
                                     </div>
                                     <div>
@@ -427,17 +431,17 @@
                                         </div>
                                     </div>
                                     <div class="game-varified-tags">
-                                        <div>
+                                        <div class="flex gap-1">
                                             <img src="images/verified.png" alt="">
                                             <span>Verified App</span>
                                         </div>
-                                        <div>
+                                        <div class="flex gap-1">
                                             <img src="images/verified_user.png" alt="">
                                             <span>Trusted App</span>
                                         </div>
                                     </div>
                                     <div class="explore-btns">
-                                        <button>Explore</button>
+                                        <button style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
                                         <div>
                                             <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
                                             <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
@@ -445,10 +449,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="aave-box" style="display: flex; gap: 10px; padding: 10px; align-items: center;">
+                            <div class="w-full bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]" style="display: flex; gap: 10px; padding: 10px; align-items: center">
                                 <img src="images/sidus-heros.png" class="gme-img-1" alt="">
-                                <div class="layer-3-game-content">
-                                    <div class="rybn-title-box">
+                                <div class=" w-full">
+                                    <div class="">
                                         <p class="title" style="font-size: 16px;">1Inch</p>
                                     </div>
                                     <div>
@@ -468,17 +472,17 @@
                                         </div>
                                     </div>
                                     <div class="game-varified-tags">
-                                        <div>
+                                        <div class="flex gap-1">
                                             <img src="images/verified.png" alt="">
                                             <span>Verified App</span>
                                         </div>
-                                        <div>
+                                        <div class="flex gap-1">
                                             <img src="images/verified_user.png" alt="">
                                             <span>Trusted App</span>
                                         </div>
                                     </div>
                                     <div class="explore-btns">
-                                        <button>Explore</button>
+                                        <button style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
                                         <div>
                                             <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
                                             <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
@@ -487,11 +491,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lyr-3-align">
-                            <div class="aave-box" style="display: flex; gap: 10px; padding: 10px; align-items: center;">
+                        <div class="flex gap-3 grid-side-wrap">
+                            <div class="w-full bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]" style="display: flex; gap: 10px; padding: 10px; align-items: center">
                                 <img src="images/sidus-heros.png" class="gme-img-1" alt="">
-                                <div class="layer-3-game-content">
-                                    <div class="rybn-title-box">
+                                <div class=" w-full">
+                                    <div class="">
                                         <p class="title" style="font-size: 16px;">1Inch</p>
                                     </div>
                                     <div>
@@ -511,17 +515,17 @@
                                         </div>
                                     </div>
                                     <div class="game-varified-tags">
-                                        <div>
+                                        <div class="flex gap-1">
                                             <img src="images/verified.png" alt="">
                                             <span>Verified App</span>
                                         </div>
-                                        <div>
+                                        <div class="flex gap-1">
                                             <img src="images/verified_user.png" alt="">
                                             <span>Trusted App</span>
                                         </div>
                                     </div>
                                     <div class="explore-btns">
-                                        <button>Explore</button>
+                                        <button style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
                                         <div>
                                             <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
                                             <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
@@ -529,10 +533,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="aave-box" style="display: flex; gap: 10px; padding: 10px; align-items: center;">
+                            <div class="w-full bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]" style="display: flex; gap: 10px; padding: 10px; align-items: center">
                                 <img src="images/sidus-heros.png" class="gme-img-1" alt="">
-                                <div class="layer-3-game-content">
-                                    <div class="rybn-title-box">
+                                <div class=" w-full">
+                                    <div class="">
                                         <p class="title" style="font-size: 16px;">1Inch</p>
                                     </div>
                                     <div>
@@ -552,17 +556,17 @@
                                         </div>
                                     </div>
                                     <div class="game-varified-tags">
-                                        <div>
+                                        <div class="flex gap-1">
                                             <img src="images/verified.png" alt="">
                                             <span>Verified App</span>
                                         </div>
-                                        <div>
+                                        <div class="flex gap-1">
                                             <img src="images/verified_user.png" alt="">
                                             <span>Trusted App</span>
                                         </div>
                                     </div>
                                     <div class="explore-btns">
-                                        <button>Explore</button>
+                                        <button style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
                                         <div>
                                             <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
                                             <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
@@ -572,16 +576,19 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
 
 
                 <!-- LAYOUT 4 -->
-                <div class="layout-4">
-                    <div class="lyr-3-align" style="flex-direction: column;">
-                        <div class="aave-box" style="display: flex; gap: 10px; padding: 10px; align-items: center;">
-                            <img src="images/sidus-heros.png" class="gme-img-1" alt="" >
-                            <div class="layer-3-game-content">
-                                <div class="rybn-title-box">
+
+                <div class="grid grid-cols-1 lg:grid-cols-[379px_1fr] gap-6">
+                    <div class="flex flex-col justify-between">
+                        <div class="w-full bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]" style="display: flex; gap: 10px; padding: 10px; align-items: center">
+                            <img src="images/sidus-heros.png" class="gme-img-1" alt="">
+                            <div class=" w-full">
+                                <div class="">
                                     <p class="title" style="font-size: 16px;">1Inch</p>
                                 </div>
                                 <div>
@@ -601,28 +608,28 @@
                                     </div>
                                 </div>
                                 <div class="game-varified-tags">
-                                    <div>
+                                    <div class="flex gap-1">
                                         <img src="images/verified.png" alt="">
                                         <span>Verified App</span>
                                     </div>
-                                    <div>
+                                    <div class="flex gap-1">
                                         <img src="images/verified_user.png" alt="">
                                         <span>Trusted App</span>
                                     </div>
                                 </div>
                                 <div class="explore-btns">
-                                    <button>Explore</button>
+                                    <button style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
                                     <div>
-                                        <p> <span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
-                                        <p ><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
+                                        <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
+                                        <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="aave-box" style="display: flex; gap: 10px; padding: 10px; align-items: center;">
-                            <img src="images/sidus-heros.png" class="gme-img-1" alt="" >
-                            <div class="layer-3-game-content">
-                                <div class="rybn-title-box">
+                        <div class="w-full bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]" style="display: flex; gap: 10px; padding: 10px; align-items: center">
+                            <img src="images/sidus-heros.png" class="gme-img-1" alt="">
+                            <div class=" w-full">
+                                <div class="">
                                     <p class="title" style="font-size: 16px;">1Inch</p>
                                 </div>
                                 <div>
@@ -642,17 +649,17 @@
                                     </div>
                                 </div>
                                 <div class="game-varified-tags">
-                                    <div>
+                                    <div class="flex gap-1">
                                         <img src="images/verified.png" alt="">
                                         <span>Verified App</span>
                                     </div>
-                                    <div>
+                                    <div class="flex gap-1">
                                         <img src="images/verified_user.png" alt="">
                                         <span>Trusted App</span>
                                     </div>
                                 </div>
                                 <div class="explore-btns">
-                                    <button>Explore</button>
+                                    <button style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
                                     <div>
                                         <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
                                         <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
@@ -661,142 +668,145 @@
                             </div>
                         </div>
                     </div>
-                    <div class="aave-box">
-                        <img src="images/aave.png" class="main-game-img" alt="">
-                        <div class="layer-3-game-content">
-                            <div class="rybn-title-box">
-                                <p class="title">1Inch</p>
-                                 
-                                <div class="ryn-label-tags">
-                                    <label class="ppl-visited">400 People Visited</label>
-                                    <label class="nft-pool">NFT Pool</label>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="" style="color: white; font-size: 10px;">
-                                    Open-source non-custodial liquidity protocol..
-                                </p>
-                                <p class="defi-wallet" style="font-weight: normal; font-size: 14px;">DEFI • WALLET</p>
-                                <div class="rating">
-                                    <div class="stars flex">
-                                        <img src="images/star-logo.png" style="width: 16px;" alt="">
-                                        <img src="images/star-logo.png" style="width: 16px;" alt="">
-                                        <img src="images/star-logo.png" style="width: 16px;" alt="">
-                                        <img src="images/star-logo.png" style="width: 16px;" alt="">
-                                        <img src="images/empty-star.png" style="width: 16px;" alt="">
+
+                    
+                    <div class="flex justify-between gap-3 grid-side-wrap-2  ">
+                        <div class="w-full h-auto bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]">
+                            <img src="images/aave.png" class="w-full " alt="">
+                            <div class="">
+                                <div class="flex justify-between items-center">
+                                    <p class="title">1Inch</p>
+                                    <div class="ryn-label-tags">
+                                        <label class="ppl-visited">400 People Visited</label>
+                                        <label class="nft-pool">NFT Pool</label>
                                     </div>
-                                    <p style="font-size: 11px;">. 4.8 Ratings | 369 Reviews</p>
-                                </div>
-                            </div>
-                            <div class="game-varified-tags">
-                                <div>
-                                    <img src="images/verified.png" alt="">
-                                    <span>Verified App</span>
                                 </div>
                                 <div>
-                                    <img src="images/verified_user.png" alt="">
-                                    <span>Trusted App</span>
-                                </div>
-                            </div>
-                            <div class="explore-btns">
-                                <button>Explore</button>
-                                <div>
-                                    <p ><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
-                                    <p ><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lyr-3-align" style="flex-direction: column;">
-                        <div class="aave-box" style="display: flex; gap: 10px; padding: 10px; align-items: center;">
-                            <img src="images/sidus-heros.png" class="gme-img-1" alt="">
-                            <div class="layer-3-game-content">
-                                <div class="rybn-title-box">
-                                    <p class="title" style="font-size: 16px;">1Inch</p>
-                                </div>
-                                <div>
-                                    <p class="" style="color: white; font-size: 8px;">
+                                    <p class="defi-wallet" style="font-weight: normal; font-size: 14px;">DEFI • WALLET</p>
+                                    <p class="" style="color: white; font-size: 10px;">
                                         Open-source non-custodial liquidity protocol..
                                     </p>
-                                    <p class="defi-wallet" style="font-weight: normal; font-size: 11px;">DEFI • WALLET</p>
                                     <div class="rating">
                                         <div class="stars flex">
-                                            <img src="images/star-logo.png" style="width: 14px;" alt="">
-                                            <img src="images/star-logo.png" style="width: 15px;" alt="">
-                                            <img src="images/star-logo.png" style="width: 14px;" alt="">
-                                            <img src="images/star-logo.png" style="width: 14px;" alt="">
-                                            <img src="images/empty-star.png" style="width: 14px;" alt="">
+                                            <img src="images/star-logo.png" style="width: 16px;" alt="">
+                                            <img src="images/star-logo.png" style="width: 16px;" alt="">
+                                            <img src="images/star-logo.png" style="width: 16px;" alt="">
+                                            <img src="images/star-logo.png" style="width: 16px;" alt="">
+                                            <img src="images/empty-star.png" style="width: 16px;" alt="">
                                         </div>
-                                        <p style="font-size: 9px;">. 4.8 Ratings | 369 Reviews</p>
+                                        <p style="font-size: 11px;">. 4.8 Ratings | 369 Reviews</p>
                                     </div>
                                 </div>
-                                <div class="game-varified-tags">
-                                    <div>
+                                <div class="">
+                                    <div class="flex items-center gap-2">
                                         <img src="images/verified.png" alt="">
-                                        <span>Verified App</span>
+                                        <span class="text-[9px] text-white">Verified App</span>
                                     </div>
-                                    <div>
+                                    <div class="flex items-center gap-2">
                                         <img src="images/verified_user.png" alt="">
-                                        <span>Trusted App</span>
+                                        <span class="text-[9px] text-white">Trusted App</span>
                                     </div>
                                 </div>
-                                <div class="explore-btns">
-                                    <button>Explore</button>
-                                    <div>
+                                <div class="flex justify-between items-center">
+                                    <button class="bg-[#7FFDFD]" style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
+                                    <div class="text-[7px]">
                                         <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
                                         <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="aave-box" style="display: flex; gap: 10px; padding: 10px; align-items: center;">
-                            <img src="images/sidus-heros.png" class="gme-img-1" alt="">
-                            <div class="layer-3-game-content">
-                                <div class="rybn-title-box">
-                                    <p class="title" style="font-size: 16px;">1Inch</p>
-                                </div>
-                                <div>
-                                    <p class="" style="color: white; font-size: 8px;">
-                                        Open-source non-custodial liquidity protocol..
-                                    </p>
-                                    <p class="defi-wallet" style="font-weight: normal; font-size: 11px;">DEFI • WALLET</p>
-                                    <div class="rating">
-                                        <div class="stars flex">
-                                            <img src="images/star-logo.png" style="width: 14px;" alt="">
-                                            <img src="images/star-logo.png" style="width: 15px;" alt="">
-                                            <img src="images/star-logo.png" style="width: 14px;" alt="">
-                                            <img src="images/star-logo.png" style="width: 14px;" alt="">
-                                            <img src="images/empty-star.png" style="width: 14px;" alt="">
+                        <div class="flex flex-col justify-between w-full">
+                            <div class="w-full bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]" style="display: flex; gap: 10px; padding: 10px; align-items: center">
+                                <img src="images/sidus-heros.png" class="gme-img-1" alt="">
+                                <div class=" w-full">
+                                    <div class="">
+                                        <p class="title" style="font-size: 16px;">1Inch</p>
+                                    </div>
+                                    <div>
+                                        <p class="" style="color: white; font-size: 8px;">
+                                            Open-source non-custodial liquidity protocol..
+                                        </p>
+                                        <p class="defi-wallet" style="font-weight: normal; font-size: 11px;">DEFI • WALLET</p>
+                                        <div class="rating">
+                                            <div class="stars flex">
+                                                <img src="images/star-logo.png" style="width: 14px;" alt="">
+                                                <img src="images/star-logo.png" style="width: 15px;" alt="">
+                                                <img src="images/star-logo.png" style="width: 14px;" alt="">
+                                                <img src="images/star-logo.png" style="width: 14px;" alt="">
+                                                <img src="images/empty-star.png" style="width: 14px;" alt="">
+                                            </div>
+                                            <p style="font-size: 9px;">. 4.8 Ratings | 369 Reviews</p>
                                         </div>
-                                        <p style="font-size: 9px;">. 4.8 Ratings | 369 Reviews</p>
+                                    </div>
+                                    <div class="game-varified-tags">
+                                        <div class="flex gap-1">
+                                            <img src="images/verified.png" alt="">
+                                            <span>Verified App</span>
+                                        </div>
+                                        <div class="flex gap-1">
+                                            <img src="images/verified_user.png" alt="">
+                                            <span>Trusted App</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-btns">
+                                        <button style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
+                                        <div>
+                                            <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
+                                            <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="game-varified-tags">
-                                    <div>
-                                        <img src="images/verified.png" alt="">
-                                        <span>Verified App</span>
+                            </div>
+                            <div class="w-full bg-gradient-to-b from-[#191027] to-[#2A1249] border-[3px] p-2 rounded-3xl border-[#18567F] border-[3px]" style="display: flex; gap: 10px; padding: 10px; align-items: center">
+                                <img src="images/sidus-heros.png" class="gme-img-1" alt="">
+                                <div class=" w-full">
+                                    <div class="">
+                                        <p class="title" style="font-size: 16px;">1Inch</p>
                                     </div>
                                     <div>
-                                        <img src="images/verified_user.png" alt="">
-                                        <span>Trusted App</span>
+                                        <p class="" style="color: white; font-size: 8px;">
+                                            Open-source non-custodial liquidity protocol..
+                                        </p>
+                                        <p class="defi-wallet" style="font-weight: normal; font-size: 11px;">DEFI • WALLET</p>
+                                        <div class="rating">
+                                            <div class="stars flex">
+                                                <img src="images/star-logo.png" style="width: 14px;" alt="">
+                                                <img src="images/star-logo.png" style="width: 15px;" alt="">
+                                                <img src="images/star-logo.png" style="width: 14px;" alt="">
+                                                <img src="images/star-logo.png" style="width: 14px;" alt="">
+                                                <img src="images/empty-star.png" style="width: 14px;" alt="">
+                                            </div>
+                                            <p style="font-size: 9px;">. 4.8 Ratings | 369 Reviews</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="explore-btns">
-                                    <button>Explore</button>
-                                    <div>
-                                        <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
-                                        <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
+                                    <div class="game-varified-tags">
+                                        <div class="flex gap-1">
+                                            <img src="images/verified.png" alt="">
+                                            <span>Verified App</span>
+                                        </div>
+                                        <div class="flex gap-1">
+                                            <img src="images/verified_user.png" alt="">
+                                            <span>Trusted App</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-btns">
+                                        <button style="color: black; padding: 2px 10px; width: auto; border-radius: 5px; font-weight: normal;">Explore</button>
+                                        <div>
+                                            <p><span class="exp-txt">App Type</span> <span class="exp-btn">free</span> </p>
+                                            <p><span class="exp-txt">OS Tyoe</span> <span class="exp-btn">web</span> </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="load-more-btn">Load More</button>
-
+           
+           
             </div>
             
-        </div>
+            
 
         
     </section>
@@ -804,7 +814,7 @@
     <footer>
         <div class="get-connected">
             <p>Get Connected with us on Social Media</p>
-            <div class="footer-icons">
+            <div class="footer-icons flex gap-3">
                 <img src="images/facebook-176-svgrepo-com 1.png" alt="">
                 <img src="images/twitter-svgrepo-com 1.png" alt="">
                 <img src="images/instagram-svgrepo-com 1.png" alt="">
